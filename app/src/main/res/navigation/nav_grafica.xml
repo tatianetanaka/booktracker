@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grafica"
+    app:startDestination="@id/listaDeProgressosFragment">
+
+    <fragment
+        android:id="@+id/listaDeLidosFragment"
+        android:name="br.edu.up.app.ui.ListaDeLidosFragment"
+        android:label="lista_lidos"
+        tools:layout="@layout/lista_lidos" >
+        <action
+            android:id="@+id/action_lista_para_detalhes_lido"
+            app:destination="@id/lidosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lidosFragment"
+        android:name="br.edu.up.app.ui.LidosFragment"
+        android:label="lidos_fragment"
+        tools:layout="@layout/lidos_fragment" />
+    <fragment
+        android:id="@+id/listaDeProgressosFragment"
+        android:name="br.edu.up.app.ui.ListaDeProgressosFragment"
+        android:label="lista_de_progressos"
+        tools:layout="@layout/lista_de_progressos" >
+        <action
+            android:id="@+id/action_lista_para_detalhes_progresso"
+            app:destination="@id/progressoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/progressoFragment"
+        android:name="br.edu.up.app.ui.ProgressoFragment"
+        android:label="progresso_fragment"
+        tools:layout="@layout/progresso_fragment" />
+</navigation>

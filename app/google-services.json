@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "245895865828",
+    "firebase_url": "https://btracker-efd9a.firebaseio.com",
+    "project_id": "btracker-efd9a",
+    "storage_bucket": "btracker-efd9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245895865828:android:0059486652edc8754213f1",
+        "android_client_info": {
+          "package_name": "br.edu.up.appdozero"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245895865828-go0ir3vu1nr918ue5c4p2uflo1310vl5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKYzCp2F7gcyDMoakey1U0S4XO0Kgnhsg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245895865828-go0ir3vu1nr918ue5c4p2uflo1310vl5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
