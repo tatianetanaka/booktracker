@@ -12,6 +12,8 @@ import br.edu.up.app.R
 import br.edu.up.app.model.Lido
 import com.bumptech.glide.Glide
 import com.google.firebase.storage.FirebaseStorage
+import java.text.DateFormat
+import java.util.*
 
 class LidosAdapter(
     private val activity: FragmentActivity,
@@ -31,6 +33,7 @@ class LidosAdapter(
 
         holder.tituloLido.text = lido.titulo
         holder.autorLido.text = lido.autor
+        holder.dataLido.text = lido.data_termino
 
         val storage = FirebaseStorage.getInstance()
         val storageReference = storage.getReference(lido.foto)
@@ -42,7 +45,7 @@ class LidosAdapter(
 
         storageReference.downloadUrl.addOnFailureListener {
             Glide.with(activity)
-                .load(R.drawable.sem_foto)
+                .load(R.drawable.book_image)
                 .into(holder.fotoLido)
         }
 

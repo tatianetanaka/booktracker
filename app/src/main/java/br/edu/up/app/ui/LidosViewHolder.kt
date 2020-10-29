@@ -10,6 +10,7 @@ class LidosViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     val tituloLido: TextView = view.findViewById(R.id.titulo_lido)
     val autorLido: TextView = view.findViewById(R.id.autor_lido)
     val fotoLido: ImageView = view.findViewById(R.id.imgFotoLido)
+    val dataLido: TextView = view.findViewById(R.id.data_lido)
 
     override fun toString(): String {
         return super.toString() + " '" + tituloLido.text + "'"

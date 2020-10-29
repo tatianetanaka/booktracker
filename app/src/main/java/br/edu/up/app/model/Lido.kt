@@ -1,12 +1,15 @@
 package br.edu.up.app.model
 
-data class Lido (
+import java.util.*
+
+data class Lido(
     var docId: String,
     var titulo: String,
     var autor: String,
-    var foto: String
+    var foto: String,
+    var data_termino: String
 )
 
 {
-    constructor() : this(String(), String(), String(), String())
+    constructor() : this(String(), String(), String(), String(), String())
 }
